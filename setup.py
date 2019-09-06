@@ -1,3 +1,4 @@
+import sys
 from setuptools import setup
 
 setup(
@@ -7,3 +8,9 @@ setup(
     url="https://github.com/dsztanko/python-semantic-release-poc",
     license="MIT",
 )
+
+try:
+    from semantic_release import setup_hook
+    setup_hook(sys.argv)
+except ImportError:
+    pass
