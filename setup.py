@@ -1,7 +1,7 @@
 import sys
 from setuptools import setup
 
-__version__ = "1.1.2"
+__version__ = "1.1.3"
 
 setup(
     name="python-semantic-release-poc",
